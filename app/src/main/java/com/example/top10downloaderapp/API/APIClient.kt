@@ -10,7 +10,7 @@ class APIClient {
 
     fun getClient(): Retrofit? {
         retrofit = Retrofit.Builder()
-            .baseUrl("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications/limit=10/xml")
+            .baseUrl("http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/")
             .addConverterFactory(SimpleXmlConverterFactory.create())
             .build()
         return retrofit
